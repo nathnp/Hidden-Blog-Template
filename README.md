@@ -1,6 +1,6 @@
 # Hidden Blog Template 
 
-This is the [Blot.im](https://blot.im) template used in [rss.nthp.me](https://rss.nthp.me)
+This is the [Blot.im](https://blot.im) template used on [rss.nthp.me](https://rss.nthp.me)
 
 This template removes features, such as. 
 
