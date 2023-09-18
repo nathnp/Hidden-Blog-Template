@@ -1,0 +1,56 @@
+{{> header}}
+
+  
+{{! Image zoom plugin depends on .entry selector}}
+{{#entry}}
+
+
+  <div style="min-height:6rem;flex-direction:row;align-items:center" class="flex mt3 pt3 mb5 ">
+    <div class="w-100">
+    {{^page}}
+      <div class="w-20 bl pt5 nt5 fr pl3 lh-copy  b--black-10">
+ 
+	{{#date}}<a href="{{{url}}}" class="db black-30 f5 pr4 no-underline"><span  date-from-now="{{dateStamp}}">{{date}}</span></a>{{/date}}
+    <span class="db black-50 f5">{{#tags}}<a href="/tagged/{{slug}}" class="no-underline">{{tag}}</a>{{^last}}, {{/last}}{{/tags}}</span>    
+  		</div> 
+{{/page}}
+      <div class="w-80 pr4" >{{{titleTag}}}</div>
+    </div>
+      
+    </div>
+
+  <div class="entry pv0  w-80 b--black-10" >
+    
+
+    <div class="measure-wide lh-copy f5 black-90" style="position:relative">
+    {{{body}}}
+    </div>
+
+</div>
+
+{{/entry}}
+
+{{^entry.page}}  
+
+<div class="bt b--black-10 mv4"></div>
+
+{{> pluginHTML}}
+
+
+<div class="cf mt6"></div>
+
+<div class="w-50 fl pr4">
+
+
+</div>
+  
+  
+
+ 
+</div>
+{{/entry.page}}
+
+
+<div class="cf"></div>
+
+{{> footer}}
